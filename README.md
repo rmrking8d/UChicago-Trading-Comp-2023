@@ -15,6 +15,13 @@ Our team focused on split our bot into 3 main functions: 1) Etf arb (everyone do
 
 3) Anticpating competing against other teams, we figured we weren't competing against a truly "rational" market. To take advantage of this, we set massive spreads to earn cash from naive bots.
 
+#### Post Case 1 Disc.
+1. Portfolio risk relative to weather index or underlying price.
+2. Soybean had lognormal stationary distribution. Soybean index after 60 days. 
+3. Log common price
+4. KEY: Spot Future parity, enable long exp to SBL w/o carry cost. Shorting future. Indep, so greater dev. Can calc weather/underlying risk
+5. KEY ETH Arbitrage. Rebalance guaranteed to inc price ETF
+
 ## Case 2
 
 ## Case 3

@@ -1,0 +1,11 @@
+{
+    "alpha": 0.01,
+    "betas": [
+        1,
+        2,
+        3,
+        4
+    ],
+    "strangle": 1,
+    "iron_condor": 0
+}

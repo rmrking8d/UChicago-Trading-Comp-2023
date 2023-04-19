@@ -31,7 +31,7 @@ For this case, teams were tasked with market making options on a kinda illquid u
 2) Bets on Volatility. A discussion my team had was betting on vol while being neutral on price movements. Thus, we set up strangles and iron-condors to bet on high and low vol (resp.). This helped hedge risk from 1) (probably).
 
 #### Post Case 2 Disc.
-1. Oil curve not flat. Key was to predict shape of curve.
+1. Vol curve not flat. Key was to predict shape of curve.
 2. If u watch order book you get info. 
 3. Data gen. Underlying from ARMA model, scale down var to match 2 mon. Moving avg.
 4. Based vol on underlying, sth sth time drift.

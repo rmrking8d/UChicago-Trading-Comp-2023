@@ -23,5 +23,24 @@ Our team focused on split our bot into 3 main functions: 1) Etf arb (everyone do
 5. KEY ETH Arbitrage. Rebalance guaranteed to inc price ETF
 
 ## Case 2
+For this case, teams were tasked with market making options on a kinda illquid underlying. Options had different strikes by $5 (from 65-135) for calls and puts (e.g. SPY65P would be a put w/ strike 65). Teams were given a year of price path data (spoiler: this isn't enough to do anything). In an ideal world, one would code a black-scholes/tree fct to price options, a function to keep track of greeks, and a function (w/ adjustable param) to model the volatililty smile. With that, the following is our strategy (given that we had poor time management and this definitely wasn't finished on the bus ride to the venue) :
+
+### Our strategy
+
+1) Grid pricing. See Case-1 Strategy 3). Code was copy-pasted and adjusted for the names of assets.
+2) Bets on Volatility. A discussion my team had was betting on vol while being neutral on price movements. Thus, we set up strangles and iron-condors to bet on high and low vol (resp.). This helped hedge risk from 1) (probably).
+
+#### Post Case 2 Disc.
+1. Oil curve not flat. Key was to predict shape of curve.
+2. If u watch order book you get info. 
+3. Data gen. Underlying from ARMA model, scale down var to match 2 mon. Moving avg.
+4. Based vol on underlying, sth sth time drift.
+5. Weighted avg coefficient using iid markvov. 
+6. Tips and Tricks
+    1. Model vol curve. In params.json, should have had params to adjust skew and smile coefficient vol smile.
+    2. Following Smart Bots
+        1. Large orders indicate confidence in a trade. Signifies More info
+    3. Delta Hedging. Delta risks lower.
 
 ## Case 3
+Teams were given ten years of prices of ten different stocks. Teams were tasked with submitting optimal portfolio dates for each following day. My team just did basic Markowitz. Winning team just ran a Monte-Carlo and picked from that so....

@@ -1,5 +1,5 @@
 # UChicago-Trading-Comp-2023
-Boston College's code for UChicago-Trading-Comp-2023. 
+Boston College's code for UChicago-Trading-Comp-2023. Teamed up with @TommmyDeNezza and @xBalbinus
 
 Placed 5th for second case.
 
